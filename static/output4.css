@@ -10,7 +10,7 @@
     background-color: #14141f;
   }
   
-  *,
+  *, 
   ::before,
   ::after {
     box-sizing: border-box;
