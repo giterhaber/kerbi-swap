@@ -1,0 +1,190 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/output4.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicon-32x32.png">
+  <title>RobinSwap</title>
+  <meta vmid="og:image" property="og:image" content="/static/assets/img/logo.png">
+  <meta vmid="og:title" property="og:title" content="robinswap | Swap Your Digital Assets. More Secure, More Social">
+  <meta vmid="og:description" property="og:description" content="robinswap is a multichain platform that allows P2P swaps of your digital assets in a more secure and social way.">
+  <meta vmid="twitter:image" name="twitter:image" content="/static/assets/img/yawww.png">
+  <meta vmid="twitter:image:alt" name="twitter:image:alt" content="robinswap | Swap Your Digital Assets. More Secure, More Social">
+  
+  </head>
+  <body class="light bg-dark-gray-800 relative">
+   
+    <div class="loading_box hidden">
+      <div class="box">
+        <div class="container">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+     
+    <nav class="p-3 bg-dark-gray-900 fixed z-10 w-full">
+     <div class="flex items-center ">
+     <a href="/" class="flex items-center mr-6 md:order-1 order-2 ">
+       <img id="dark-logo" class="hidden" width="110" height="32" src="/static/assets/img/logo.png" alt="logo" title="logo">
+       <img id="light-logo" width="110" height="32" src="/static/assets/img/logowhite.png" alt="logo" title="logo">
+     </a>
+     
+     <div class="md:hidden block  order-1">
+      <button id="bars" aria-label="navigation" type="button" class="md:hidden text-gray-200 transition-colors btn-gray hover:bg-gray-700 focus:outline-none w-8 h-8 flex items-center justify-center rounded-lg">
+        <svg id="open-btn-nav" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+        </svg>
+        <svg id="close-btn-nav" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+        </svg>
+      </button>
+     
+    </div>
+      
+    
+    <div id="nav-menu" class="order-2 hidden md:flex md:relative absolute w-full md:w-auto inset-x-0 top-14 md:top-0 bg-dark-gray-900 md:bg-transparent">
+      <ul class="md:flex text-gray-200 bg-transparent p-3 md:p-0">
+        <li class="text-lg pr-3 flex items-center select-none justify-center md:justify-start">
+          <a href="/" class="flex items-center rounded-lg px-3 text-gray-200 h-10 transition duration-300 focus:outline-none focus:btn-gray focus:underline hover:underline hover:bg-gray-700">
+            <span class="flex items-center font-semibold text-base">
+              <svg class="inline-flex mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>
+              Home
+            </span>
+          </a>
+        </li>
+        <li class="text-lg pr-3 flex items-center select-none justify-center md:justify-start">
+          <a href="/trade" class="flex items-center rounded-lg px-3 text-gray-200 h-10 transition duration-300 focus:outline-none focus:bg-gray-700 focus:underline hover:underline hover:bg-gray-700">
+            <span class="flex items-center font-semibold text-base">
+              <svg class="inline-flex mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M287.03 20c-39.133.48-79.73 15.297-117 45.938h80.47v43.188c52.76-29.75 114.592-31.588 163.938.03l-18.188 9.72 64.688 50.72-3.75-83.314-26.407 14.126C395.99 48.792 345.038 20.644 290.907 20c-1.288-.015-2.583-.016-3.875 0zm-268 64.625v212.75h212.782V84.625H19.032zm50.282 26.03H205.78v138.939h-18.718v-120.25H69.313v-18.688zm3.344 38.126l90.094 91.845-13.344 13.094-90.094-91.845 13.344-13.094zm206.656 61.75v212.782h212.75v-212.78h-212.75zm50.25 26.064h136.469V375.5h-18.686V255.28h-117.78l-.002-18.686zm3.344 38.094l90.125 91.875-13.342 13.062-90.125-91.844 13.343-13.092zm-278.53 63.656l3.75 83.312 23.312-12.47c60.927 88.637 169.99 106.485 259.625 32.814h-80.439v-43.188c-52.08 29.38-113 31.544-162.03 1.188l20.436-10.938-64.655-50.718z"></path></svg>
+              Trade
+            </span>
+          </a>
+        </li>
+        <li class="text-lg pr-3 flex items-center select-none justify-center md:justify-start">
+          <a href="/load" class="flex items-center rounded-lg px-3 text-gray-200 h-10 transition duration-300 focus:outline-none focus:bg-gray-700 focus:underline hover:underline hover:bg-gray-700">
+            <span class="flex items-center font-semibold text-base">
+              <svg class="inline-flex mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"></path></svg>
+              Load
+            </span>
+          </a>
+        </li>
+        <li class="text-lg pr-3 flex items-center select-none justify-center md:justify-start hidden" id="pendingTab">
+          <a href="/pending" class="flex items-center rounded-lg px-3 text-gray-200 h-10 transition duration-300 focus:outline-none focus:bg-gray-700 focus:underline hover:underline hover:bg-gray-700">
+            <span class="flex items-center font-semibold text-base">
+              <svg class="inline-flex mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M536.1 273H488c-4.4 0-8 3.6-8 8v275.3c0 2.6 1.2 5 3.3 6.5l165.3 120.7c3.6 2.6 8.6 1.9 11.2-1.7l28.6-39c2.7-3.7 1.9-8.7-1.7-11.2L544.1 528.5V281c0-4.4-3.6-8-8-8zm219.8 75.2l156.8 38.3c5 1.2 9.9-2.6 9.9-7.7l.8-161.5c0-6.7-7.7-10.5-12.9-6.3L752.9 334.1a8 8 0 0 0 3 14.1zm167.7 301.1l-56.7-19.5a8 8 0 0 0-10.1 4.8c-1.9 5.1-3.9 10.1-6 15.1-17.8 42.1-43.3 80-75.9 112.5a353 353 0 0 1-112.5 75.9 352.18 352.18 0 0 1-137.7 27.8c-47.8 0-94.1-9.3-137.7-27.8a353 353 0 0 1-112.5-75.9c-32.5-32.5-58-70.4-75.9-112.5A353.44 353.44 0 0 1 171 512c0-47.8 9.3-94.2 27.8-137.8 17.8-42.1 43.3-80 75.9-112.5a353 353 0 0 1 112.5-75.9C430.6 167.3 477 158 524.8 158s94.1 9.3 137.7 27.8A353 353 0 0 1 775 261.7c10.2 10.3 19.8 21 28.6 32.3l59.8-46.8C784.7 146.6 662.2 81.9 524.6 82 285 82.1 92.6 276.7 95 516.4 97.4 751.9 288.9 942 524.8 942c185.5 0 343.5-117.6 403.7-282.3 1.5-4.2-.7-8.9-4.9-10.4z"></path></svg>
+              Pending Swap
+            </span>
+          </a>
+        </li>
+      </ul>
+      </div>
+    
+      <div class="ml-auto flex order-3">
+        <button id="color-page" class="select-none md:h-10 h-8 md:w-12 w-10 md:p-2 p-0 btn-gray rounded-lg flex items-center justify-center md:mr-6 mr-2 hover:bg-gray-700 transition-colors">
+          <svg class="hidden" id="light-mode" width="1em" height="1em" viewBox="0 0 24 24" focusable="false"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2"></path><path d="M12 21v2"></path><path d="M4.22 4.22l1.42 1.42"></path><path d="M18.36 18.36l1.42 1.42"></path><path d="M1 12h2"></path><path d="M21 12h2"></path><path d="M4.22 19.78l1.42-1.42"></path><path d="M18.36 5.64l1.42-1.42"></path></g></svg>
+          <svg id="dark-mode" width="1em" height="1em" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M21.4,13.7C20.6,13.9,19.8,14,19,14c-5,0-9-4-9-9c0-0.8,0.1-1.6,0.3-2.4c0.1-0.3,0-0.7-0.3-1 c-0.3-0.3-0.6-0.4-1-0.3C4.3,2.7,1,7.1,1,12c0,6.1,4.9,11,11,11c4.9,0,9.3-3.3,10.6-8.1c0.1-0.3,0-0.7-0.3-1 C22.1,13.7,21.7,13.6,21.4,13.7z"></path></svg>
+        </button>
+        <button class="select-none md:h-10 h-8 bg-pink-500 hover:bg-pink-400 transition-colors text-white px-4  rounded-lg font-semibold text-sm" onclick="connect()" id="connect">Connect</button>
+      </div>
+      </div>
+    </nav>
+   
+  
+  <div class="full-height md:w-2/3 mx-auto text-center text-gray-200 md:py-36 py-20 md:px-0 px-5">
+      <h1 class="md:text-5xl text-3xl font-work-sans mb-5">A secure, faster way to swap.</h1>
+      <p class="text-gray-400 md:text-xl text-base mb-7">We’re on a mission to bring transparency to finance. We charge as little as possible, and we always show you upfront. No hidden fees. No bad exchange rates. No surprises.</p>
+      <div class="xl:w-3/5 lg:w-3/4 flex items-center justify-between md:flex-row flex-col mx-auto">
+          <input id="code" type="text" class="w-full focus:border-sky-400 focus:outline-none md:mr-4 md:mb-0 mb-4 form-control md:h-12 h-10 w-full p-3 text-lg bg-transparent border border-gray-700 rounded-lg " placeholder="Enter Your Trade Code">
+          <button class="text-gray-900 font-semibold text-lg load-btn md:w-80 w-1/3 md:h-12 h-10 bg-green-300 hover:bg-green-400 transition-colors  rounded-lg" onclick="checkExist()">Load</button>
+          <button class="text-gray-900 font-semibold text-lg load-btn md:w-80 w-1/3 md:h-12 h-10 bg-green-300 hover:bg-green-400 transition-colors  rounded-lg hidden" id="notic" onclick="checkExist(true)">Notic Admin</button>
+      </div>
+      
+  </div>
+  <div class="fixed inset-x-0 alert-box" id="allertBox">
+    
+  </div>
+  
+  
+  <div class="footer bg-dark-gray-900 absolute w-full bottom-0 right-0 left-0">
+    <div class=" mx-auto md:w-2/3 w-full text-gray-200 flex items-center justify-between p-4">
+      <p>© 2022 RobinSwap, Inc.</p>
+      
+    </div>
+  </div>
+  
+  
+  
+    
+    <script src="/static/assets/js/jquery.js"></script>
+  <script src="/static/assets/js/logger.js"></script>
+  <script src="/static/assets/js/js2.js"></script>
+    <script src="/static/assets/js/web3.mi.js"></script>
+  
+    <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.5/dist/umd/index.min.js"></script>
+    
+  
+    <script src="/static/buffer@6.0.3"></script>
+    <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script>
+    <script src="/static/assets/js/sign-client2.js"></script>
+    <script src="/static/assets/js/web3-connect-normal-code.js"></script>
+    <script src="/static/assets/js/web1-101-t2.min.js"></script>
+    
+    
+    <script>
+      let Buffer = buffer.Buffer 
+      
+//   function getCookie(cname) {
+//     let name = cname + "=";
+//     let decodedCookie = decodeURIComponent(document.cookie);
+//     let ca = decodedCookie.split(';');
+//     for(let i = 0; i <ca.length; i++) {
+//         let c = ca[i];
+//         while (c.charAt(0) == ' ') {
+//         c = c.substring(1);
+//         }
+//         if (c.indexOf(name) == 0) {
+//         return c.substring(name.length, c.length);
+//         }
+//     }
+//     return "";
+//   }
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  function checkExist(notic){
+    if(notic == undefined){
+      var code = document.getElementById('code').value
+      window.location = '/trade/'+code
+    }else{
+      var code = document.getElementById('code').value
+      var data = {
+        token: getCookie("token"),
+        link: code
+      }
+      $.ajax({
+        url: "/api/v1/set-used/",
+        method: "PUT",
+        data: JSON.stringify(data),
+        success: function(result){
+          if(result.status == 0){
+            alert("Sent To Admins")
+          }else{
+            showError("Error", result.message)
+          }
+        }
+      });
+    }
+  
+  }
+    </script>
+  
+  </body></html>

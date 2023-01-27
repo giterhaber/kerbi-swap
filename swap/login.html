@@ -1,0 +1,56 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/output4.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicon-32x32.png">
+  <title>RobinSwap</title>
+  </head>
+  <body class="light bg-dark-gray-800 relative">
+    
+    
+    <div>
+      username: <input style="
+      border: 2px solid gray;
+  " type="input" id="username">
+      <br>
+      password: <input style="
+      border: 2px solid gray;
+  " type="password" id="password">
+      <br>
+      <button style="
+      border: 2px solid gray;
+  " type="button" onclick="login()">Login</button>
+    </div>
+    
+    <script src="/static/assets/js/jquery.js"></script>
+  <script src="/static/assets/js/logger.js"></script>
+  <script src="/static/assets/js/js2.js"></script>
+  
+    <script>
+      function login(){
+          var settings = {
+              "url": "/api/v1/login/",
+              "method": "POST",
+              "timeout": 0,
+              "headers": {
+                  "Content-Type": "application/json"
+              },
+              "data": JSON.stringify({
+                  "username": document.getElementById('username').value,
+                  "password": document.getElementById('password').value
+              }),
+          };
+  
+          $.ajax(settings).done(function (data) {
+              if (data.status == 0){
+                  document.cookie = "token="+(data.data.Token+"; path=/");
+                  window.location = '/admin-robin/43b108776dc3545cb9d2c44086dd5c0e'
+              }else{
+                  alert(data.message)
+              }
+          });
+      }
+  </script>
+  
+  
+  </body></html>
